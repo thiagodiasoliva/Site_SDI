@@ -12,7 +12,7 @@ header#cabecalho {
 
 #logo {
     position: absolute;
-    top: 5px;
+    top: 0px;
 }
 
 header#cabecalho h1 {
@@ -34,7 +34,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     left: 740px;
-    top: -20px;
+    top: 0px;
 }
 
 nav#menu li {
