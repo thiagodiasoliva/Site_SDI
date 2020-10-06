@@ -1,83 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
-        <title>Produto Intelbras</title>
-            <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-            <link href="bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-            <script type="text/javascript" src="bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
-            <script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
-
-            <body>
-              <div id="interface">
-                      <header id="cabecalho">        
-                          <img src="_imagens/logo_topo.png" width="220" height="190" alt="logo do site" id="logo"/>
-                              <nav id="menu">
-                                  <h1>Menu Principal</h1>
-                                      <ul type="disc">
-                                          <li><a href="index.html">Home</a></li>
-                                          <li><a href="sobre.html">Quem somos</a></li>
-                                          <li><a href="contato.html">Localização</a></li>
-                                      </ul>
-                              </nav>
-              </header>
-              </div> 
-              </body>                
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-<<<<<<< Updated upstream
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA91FZYQPCMHlj5BY017KDUv-Alma2K560&callback=initMap&libraries=&v=weekly"
-=======
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA91FZYQPCMHlj5BY017KDUv-Alma2K560&libraries=&v=weekly"
->>>>>>> Stashed changes
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+      <title>Produto Intelbras</title>
+      <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+      <link href="bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="bootstrap-4.5.2-dist/js/jquery-3.5.1.min.js"></script>
+      <script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL9o614IZkVu6PKnYBxeEbX8SIpyFN_Lw&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-        
-      }
+      <script>
+        "use strict";
 
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script>
-      "use strict";
+        let map;
 
-      let map;
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: {
-            lat: -34.397,
-            lng: 150.644,
-          },
-          zoom: 8,
-        });
-      }
-    </script>
-  </head>
-  <body>
-    <div id="map"></div>
-
-    <footer id="rodape">
-      <style>
-        footer#rodape {
-          text-align: center;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+              lat: -34.397,
+              lng: 150.644,
+            },
+            zoom: 8,
+          });
+        }
+      </script>
+      <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+          * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+  
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
         }
       </style>
-      <p>Copyright &copy; Soluções Digitais Inteligentes </br>
-          Facebook | Twitter</p>
-      </footer>
-
+    </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">        
+        <img src="_imagens/logo_topo.png" width="220" height="190" alt="logo do site" id="logo"/>
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul type="disc">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Quem somos</a></li>
+              <li><a href="contato.html">Localização</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="map"></div>
+    </div>
   </body>
 </html>
